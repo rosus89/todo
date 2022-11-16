@@ -12,7 +12,7 @@ function App() {
 
   return (
     <div className="App">
-       <h1>TodoList</h1>
+       <h1>Todo List</h1>
        <TodoForm dispatch={dispatch}  />
        { state.todos.length !== 0 ? state.todos.map((item) => <TodoItem todo={item} key={item.id} dispatch={dispatch} />) : <div>Add a todo first</div> }
     </div>
